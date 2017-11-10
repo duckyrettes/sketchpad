@@ -1,12 +1,83 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background-color: #000011;
+}
+
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#edit-grid {
+	position: relative;
+	width: 300px;
+	height: 40px;
+	margin: 20px 0;
+	font-size: 20px;
+	background-color: #662149;
+	color: #bbb;
+	border: 2px solid #441129;
+	border-radius: 5px;
+	transition: background-color 0.15s, color 0.15s, border 0.15s;
+}
+
+#edit-grid:hover {
+	background-color: #c155a4;
+	color: #fff;
+	border: 2px solid #a13385;
+}
+
+#edit-grid:active {
+	top: 1px;
+	left: 1px;
+}
+
+#edit-grid:focus { outline: none; }
+
 #grid-container {
+	width: 875px;
+	height: 875px;
+	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(16, 1fr);
 	grid-template-rows: repeat(16, 1fr);
-	grid-gap: 5px;
-	background-color: #c15599;
+	grid-gap: 1px;
 }
 
-#grid-container > div {
-	background-color: #c15599;
-	border: 2px solid #a13377;
-}
+#grid-container > div { transition: background-color 0.15s; }
+
+.row-1 { background-color: rgb(100, 20, 66); }
+
+.row-2 { background-color: rgb(109, 23, 72); }
+
+.row-3 { background-color: rgb(118, 26, 78); }
+
+.row-4 { background-color: rgb(127, 29, 84); }
+
+.row-5 { background-color: rgb(136, 22, 90); }
+
+.row-6 { background-color: rgb(145, 25, 96); }
+
+.row-7 { background-color: rgb(154, 28, 102); }
+
+.row-8 { background-color: rgb(163, 21, 108); }
+
+.row-9 { background-color: rgb(172, 24, 114); }
+
+.row-10 { background-color: rgb(181, 27, 120); }
+
+.row-11 { background-color: rgb(190, 30, 126); }
+
+.row-12 { background-color: rgb(199, 23, 132); }
+
+.row-13 { background-color: rgb(208, 26, 138); }
+
+.row-14 { background-color: rgb(217, 29, 144); }
+
+.row-15 { background-color: rgb(226, 22, 150); }
+
+.row-16 { background-color: rgb(235, 25, 156); }
+
+.divMouseover { background-color: white; }
